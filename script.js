@@ -1,9 +1,8 @@
-// Smooth Scroll to Sections
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
+// Smooth Scroll to Projects or Footer
+document.querySelectorAll('a[href^="https://"]').forEach(link => {
+    link.addEventListener("click", function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
+        const target = this.getAttribute("href");
+        window.open(target, "_blank");
     });
 });
