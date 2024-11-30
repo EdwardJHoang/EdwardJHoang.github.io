@@ -6,8 +6,8 @@
     <title>Edward Hoang's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Navigation Bar -->
     <nav>
         <ul class="navbar">
             <li><a href="#about">About</a></li>
@@ -15,14 +15,58 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <h1>Welcome to Edward Hoang's Portfolio</h1>
-    <p>I am an aspiring Data Analyst. Check out my projects below:</p>
-    <ul>
-        <li><a href="https://github.com/EdwardJHoang/lumina-tech-analytics">Project 1: Lumina Technology - Sales Analysis and Prediction</a></li>
-        <li><a href="https://github.com/EdwardJHoang/credit-risk-analysis">Project 2: Credit Risk Analysis and Default Prediction</a></li>
-    </ul>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Edward Hoang's Portfolio</h1>
+        <p>I am an aspiring Data Analyst. Check out my projects below:</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am passionate about data analysis and visualization using Python, SQL, and Tableau. My focus is on solving business problems and creating actionable insights.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="assets/sales_dashboard.png" alt="Sales Dashboard" class="project-image">
+            <div class="project-info">
+                <h3>Project 1: Lumina Technology - Sales Analysis and Prediction</h3>
+                <p>Analyzed sales data to predict future trends and improve profitability.</p>
+                <a href="https://github.com/EdwardJHoang/lumina-tech-analytics" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="assets/credit_risk.png" alt="Credit Risk Analysis" class="project-image">
+            <div class="project-info">
+                <h3>Project 2: Credit Risk Analysis and Default Prediction</h3>
+                <p>Implemented machine learning models to predict credit risk for financial institutions.</p>
+                <a href="https://github.com/EdwardJHoang/credit-risk-analysis" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or opportunities!</p>
+        <ul>
+            <li>Email: <a href="mailto:edward.n.hoang@gmail.com">edward.n.hoang@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></li>
+            <li>GitHub: <a href="https://github.com/EdwardJHoang" target="_blank">EdwardJHoang</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Contact me: <a href="mailto:edward.n.hoang@gmail.com">edward.n.hoang@gmail.com</a></p>
+        <p>&copy; 2024 Edward Hoang | Built with GitHub Pages</p>
     </footer>
 </body>
 </html>
