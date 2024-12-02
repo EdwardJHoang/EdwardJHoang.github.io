@@ -30,24 +30,72 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Contact Form */
-form input, form textarea {
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between form elements */
+}
+
+#contact form input,
+#contact form textarea {
     width: 100%;
-    margin: 10px 0;
-    padding: 10px;
+    max-width: 500px;
+    padding: 10px 15px;
+    font-size: 1em;
     border: 1px solid #ddd;
     border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-form button {
+#contact form textarea {
+    resize: vertical; /* Allow resizing only vertically */
+}
+
+#contact form button {
+    width: 100%;
+    max-width: 200px;
     background-color: var(--btn-bg-color);
     color: white;
-    border: none;
+    font-size: 1em;
     padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-form button:hover {
+#contact form button:hover {
     background-color: var(--btn-hover-bg-color);
+}
+
+.contact-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between contact links */
+}
+
+.contact-links a {
+    color: var(--btn-bg-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: var(--btn-hover-bg-color);
 }
