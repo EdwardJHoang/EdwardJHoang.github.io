@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #2C2E31; /* JP Morgan dark gray */
+    color: #333333; /* JP Morgan dark gray */
     line-height: 1.6;
     background-color: #F8F8F8; /* Soft gray background */
 }
@@ -21,12 +21,9 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #FFFFFF; /* White background for navbar */
-    border-bottom: 1px solid #E0E0E0; /* Subtle border */
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #FFFFFF; /* White navbar background */
+    border-bottom: 1px solid #E0E0E0;
+    padding: 15px 0;
 }
 
 .navbar {
@@ -38,7 +35,7 @@ nav {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #0072CE; /* JP Morgan's blue */
+    color: #0C2340; /* JP Morgan dark blue */
     text-decoration: none;
 }
 
@@ -51,21 +48,21 @@ nav {
 .nav-links li a {
     text-decoration: none;
     font-weight: 600;
-    color: #2C2E31;
+    color: #333333;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #0072CE; /* Blue hover effect */
+    color: #0C2340; /* Hover effect: Dark blue */
 }
 
 /* Hero Section */
 .hero {
-    background-color: #0072CE; /* JP Morgan's blue */
-    color: #FFFFFF; /* White text */
+    background-color: #0C2340; /* JP Morgan's dark blue */
+    color: #FFFFFF;
     text-align: center;
     padding: 60px 20px;
-    margin-bottom: 40px;
+    position: relative;
 }
 
 .hero h1 {
@@ -78,13 +75,11 @@ nav {
     font-size: 1.2em;
 }
 
-/* Section Titles */
-section h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #2C2E31;
-    margin-bottom: 20px;
-    font-weight: bold;
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 /* About Section */
@@ -99,7 +94,7 @@ section h2 {
 
 .about p {
     font-size: 1.1em;
-    color: #555; /* Medium gray text */
+    color: #555555;
 }
 
 /* Projects Section */
@@ -112,18 +107,27 @@ section h2 {
 }
 
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
-    color: #0072CE; /* Blue project titles */
+    color: #0C2340;
     font-size: 1.4em;
     margin-bottom: 10px;
 }
 
 .project p {
-    color: #555;
-    font-size: 1em;
+    color: #555555;
 }
 
 /* Contact Section */
@@ -131,13 +135,12 @@ section h2 {
     background-color: #FFFFFF;
     padding: 40px 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .contact ul {
     list-style: none;
-    padding: 0;
     margin-top: 20px;
 }
 
@@ -147,20 +150,19 @@ section h2 {
 }
 
 .contact ul li a {
-    color: #0072CE;
+    color: #0C2340;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
 }
 
 .contact ul li a:hover {
-    color: #0056A3; /* Darker blue hover effect */
+    color: #0072CE;
 }
 
 /* Footer */
 footer {
-    background-color: #2C2E31; /* Dark gray footer */
-    color: #FFFFFF; /* White text */
+    background-color: #333333;
+    color: #FFFFFF;
     text-align: center;
     padding: 15px 0;
     font-size: 0.9em;
