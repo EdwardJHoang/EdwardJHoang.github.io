@@ -1,10 +1,15 @@
 /* General Reset */
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #F4F4F4;
-    color: #2C2E31;
+    color: #2C2E31; /* JP Morgan dark gray */
     line-height: 1.6;
+    background-color: #F8F8F8; /* Soft gray background */
 }
 
 /* Container */
@@ -14,48 +19,59 @@ body {
     padding: 0 20px;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #FFFFFF;
+/* Navigation Bar */
+nav {
+    background-color: #FFFFFF; /* White background for navbar */
+    border-bottom: 1px solid #E0E0E0; /* Subtle border */
     padding: 10px 0;
-    border-bottom: 1px solid #E0E0E0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.navbar .logo {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #0072CE;
+    color: #0072CE; /* JP Morgan's blue */
     text-decoration: none;
 }
 
-.navbar .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.navbar .nav-links li a {
+.nav-links li a {
     text-decoration: none;
-    color: #2C2E31;
     font-weight: 600;
-    transition: color 0.3s;
+    color: #2C2E31;
+    transition: color 0.3s ease;
 }
 
-.navbar .nav-links li a:hover {
-    color: #0072CE;
+.nav-links li a:hover {
+    color: #0072CE; /* Blue hover effect */
 }
 
 /* Hero Section */
 .hero {
-    background-color: #0072CE;
-    color: #FFFFFF;
+    background-color: #0072CE; /* JP Morgan's blue */
+    color: #FFFFFF; /* White text */
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    margin-bottom: 40px;
 }
 
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .hero p {
@@ -66,8 +82,9 @@ body {
 section h2 {
     text-align: center;
     font-size: 2em;
-    margin-bottom: 20px;
     color: #2C2E31;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* About Section */
@@ -76,39 +93,75 @@ section h2 {
     padding: 40px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #555; /* Medium gray text */
 }
 
 /* Projects Section */
 .projects {
-    padding: 40px 20px;
-}
-
-.project-card {
     background-color: #FFFFFF;
-    margin: 20px 0;
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
-.project-card h3 {
-    color: #0072CE;
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #0072CE; /* Blue project titles */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #555;
+    font-size: 1em;
 }
 
 /* Contact Section */
 .contact {
     background-color: #FFFFFF;
     padding: 40px 20px;
-    text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.contact ul li a {
+    color: #0072CE;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact ul li a:hover {
+    color: #0056A3; /* Darker blue hover effect */
 }
 
 /* Footer */
 footer {
-    background-color: #2C2E31;
-    color: #FFFFFF;
+    background-color: #2C2E31; /* Dark gray footer */
+    color: #FFFFFF; /* White text */
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     font-size: 0.9em;
 }
