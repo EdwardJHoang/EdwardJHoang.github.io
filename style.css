@@ -3,122 +3,51 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa; /* Light gray for the background */
-    color: #333; /* Dark gray text */
+    background-color: var(--bg-color, #f8f9fa);
+    color: var(--text-color, #333);
 }
 
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #2c2e31; /* Dark gray for the navbar */
-    padding: 10px 0;
+/* Theme Variables */
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --card-bg-color: #ffffff;
+    --btn-bg-color: #2c2e31;
+    --btn-hover-bg-color: #555;
 }
 
-.navbar li {
-    list-style: none;
-    margin: 0 15px;
+/* Dark Theme */
+.dark-theme {
+    --bg-color: #2c2e31;
+    --text-color: #f8f9fa;
+    --card-bg-color: #333;
+    --btn-bg-color: #f8f9fa;
+    --btn-hover-bg-color: #ddd;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #ffffff; /* White text for links */
-    font-weight: bold;
-    transition: color 0.3s ease;
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
-.navbar a:hover {
-    color: #9c9c9c; /* Subtle hover color */
-}
-
-/* Header Section */
-header {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #ffffff; /* White for the header background */
-    border-bottom: 1px solid #ddd; /* Subtle border at the bottom */
-}
-
-header h1 {
-    font-size: 2.5em;
-    color: #2c2e31; /* Dark gray text for the header title */
-}
-
-header p {
-    font-size: 1.2em;
-    color: #666; /* Medium gray for the description */
-}
-
-/* About and Contact Section */
-section {
-    text-align: center;
-    padding: 30px 10px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #ffffff; /* White background for sections */
-    margin-bottom: 20px; /* Space between sections */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-section h2 {
-    font-size: 2em;
-    color: #2c2e31; /* Dark gray for section titles */
-    margin-bottom: 10px;
-}
-
-/* Project Card Layout */
-.project-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 20px;
-    transition: transform 0.2s;
-    border: 1px solid #ddd; /* Subtle border */
-}
-
-.project-card:hover {
-    transform: scale(1.02);
-}
-
-.project-image {
-    max-width: 100%;
-    height: auto;
+/* Contact Form */
+form input, form textarea {
+    width: 100%;
     margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.project-info {
-    text-align: center;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #2c2e31; /* Dark gray button */
+form button {
+    background-color: var(--btn-bg-color);
     color: white;
+    border: none;
     padding: 10px 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #555; /* Medium gray hover effect */
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #2c2e31; /* Dark gray footer */
-    color: white;
-    font-size: 0.9em;
-    margin-top: 40px;
+form button:hover {
+    background-color: var(--btn-hover-bg-color);
 }
