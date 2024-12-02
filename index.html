@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edward Hoang's Portfolio</title>
+    <meta name="description" content="Edward Hoang's Data Analyst Portfolio showcasing projects in Python, SQL, and Tableau.">
+    <meta name="keywords" content="Data Analyst, Edward Hoang, Python, SQL, Tableau, Data Analysis Portfolio">
+    <title>Edward Hoang | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -20,36 +22,39 @@
     <!-- Header -->
     <header>
         <h1>Welcome to Edward Hoang's Portfolio</h1>
-        <p>I am an aspiring Data Analyst. Check out my projects below:</p>
+        <p>I am an aspiring Data Analyst passionate about solving business problems using data-driven insights.</p>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I am passionate about data analysis and visualization using Python, SQL, and Tableau. My focus is on solving business problems and creating actionable insights.</p>
+        <p>I specialize in data analysis, visualization, and machine learning using Python, SQL, and Tableau. My projects focus on driving insights in finance, technology, and commerce.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-
-        <!-- Project 1 -->
-        <div class="project-card">
-            <img src="assets/sales_dashboard.png" alt="Sales Dashboard" class="project-image">
-            <div class="project-info">
-                <h3>Project 1: Lumina Technology - Sales Analysis and Prediction</h3>
-                <p>Analyzed sales data to predict future trends and improve profitability.</p>
-                <a href="https://github.com/EdwardJHoang/lumina-tech-analytics" target="_blank" class="btn">View Project</a>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="assets/sales_dashboard.png" alt="Sales Dashboard" class="project-image">
+                <div class="project-info">
+                    <h3>Project 1: Lumina Technology - Sales Analysis</h3>
+                    <p>Tools: Python, Tableau, SQL</p>
+                    <p>Analyzed sales data to predict future trends and improve profitability.</p>
+                    <a href="https://github.com/EdwardJHoang/lumina-tech-analytics" target="_blank" class="btn">View on GitHub</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <img src="assets/credit_risk.png" alt="Credit Risk Analysis" class="project-image">
-            <div class="project-info">
-                <h3>Project 2: Credit Risk Analysis and Default Prediction</h3>
-                <p>Implemented machine learning models to predict credit risk for financial institutions.</p>
-                <a href="https://github.com/EdwardJHoang/credit-risk-analysis" target="_blank" class="btn">View Project</a>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="assets/credit_risk.png" alt="Credit Risk Analysis" class="project-image">
+                <div class="project-info">
+                    <h3>Project 2: Credit Risk Analysis</h3>
+                    <p>Tools: Python, Machine Learning, Scikit-learn</p>
+                    <p>Implemented models to predict credit risk with 90% accuracy for financial institutions.</p>
+                    <a href="https://github.com/EdwardJHoang/credit-risk-analysis" target="_blank" class="btn">View on GitHub</a>
+                </div>
             </div>
         </div>
     </section>
@@ -58,7 +63,13 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Feel free to reach out for collaborations or opportunities!</p>
-        <ul>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <ul class="contact-links">
             <li>Email: <a href="mailto:edward.n.hoang@gmail.com">edward.n.hoang@gmail.com</a></li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/edwardhoang/" target="_blank">Edward Hoang</a></li>
             <li>GitHub: <a href="https://github.com/EdwardJHoang" target="_blank">Edward Hoang</a></li>
@@ -68,6 +79,8 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Edward Hoang | Built with GitHub Pages</p>
+        <button id="theme-toggle">Toggle Theme</button>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
