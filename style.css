@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #2C2E31; /* JP Morgan dark gray */
@@ -169,97 +165,3 @@ footer {
     padding: 15px 0;
     font-size: 0.9em;
 }
-
-/* Responsive Design */
-
-/* For tablets (width up to 768px) */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    section h2 {
-        font-size: 1.8em;
-    }
-
-    .about, .projects, .contact {
-        padding: 30px 15px;
-    }
-
-    .project h3 {
-        font-size: 1.2em;
-    }
-
-    .project p {
-        font-size: 0.95em;
-    }
-
-    footer p {
-        font-size: 0.85em;
-    }
-}
-
-/* For mobile phones (width up to 480px) */
-@media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 1.8em;
-    }
-
-    .hero p {
-        font-size: 0.9em;
-    }
-
-    section h2 {
-        font-size: 1.6em;
-    }
-
-    .project h3 {
-        font-size: 1em;
-    }
-
-    .project p {
-        font-size: 0.9em;
-    }
-}
-
-/* Smooth hover effect for buttons and links */
-a, .logo {
-    transition: color 0.3s ease;
-}
-
-.project:hover {
-    transform: scale(1.02); /* Slight zoom on hover */
-    transition: transform 0.3s ease;
-}
-
-/* Smooth fade-in animation for all sections */
-section {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
