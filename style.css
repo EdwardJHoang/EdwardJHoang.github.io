@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #2C2E31; /* JP Morgan dark gray */
